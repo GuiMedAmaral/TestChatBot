@@ -1,11 +1,11 @@
 <html>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
+		background-color: #24588D;
 		font-family: "Arial", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
+		outline: 1px solid #24588D;
 	}
 </style>
 
@@ -34,17 +34,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://tnsi--r4omni.sandbox.my.salesforce.com',
-			'https://tnsi--r4omni.sandbox.my.site.com/ESWR4ChatBot1717596573656vforcesite',
+			'https://tnsi--rspilot.sandbox.my.salesforce.com',
+			'https://tnsi--rspilot.sandbox.my.site.com/TNSI',
 			gslbBaseURL,
-			'00D23000000GBtU',
+			'00D8F0000019EmK',
 			'R4_Web_Chat_queue',
 			{
-				baseLiveAgentContentURL: 'https://c.la2-c1cs-ia6.salesforceliveagent.com/content',
-				deploymentId: '57223000000CbJT',
-				buttonId: '57323000000Cb3t',
-				baseLiveAgentURL: 'https://d.la2-c1cs-ia6.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'R4_Test_Web_Chat_queue',
+				baseLiveAgentContentURL: 'https://c.la5-c1cs-ia5.salesforceliveagent.com/content',
+				deploymentId: '5728Z000000TfiW',
+				buttonId: '5738Z000000Tfmk',
+				baseLiveAgentURL: 'https://d.la5-c1cs-ia5.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I8Z000000CgyJUAS_18d48179e39',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -52,7 +52,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://tnsi--r4omni.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://tnsi--rspilot.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
